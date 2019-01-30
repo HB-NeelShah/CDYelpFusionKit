@@ -121,8 +121,8 @@ public class CDYelpAPIClient: NSObject {
                                  openAt: Int?,
                                  attributes: [CDYelpAttributeFilter]?,
                                  completion: @escaping (CDYelpSearchResponse?) -> Void) {
-        assert((latitude != nil && longitude != nil) ||
-            (location != nil && location != ""), "Either a latitude and longitude or a location are required to query the Yelp Fusion API search endpoint.")
+//        assert((latitude != nil && longitude != nil) ||
+//            (location != nil && location != ""), "Either a latitude and longitude or a location are required to query the Yelp Fusion API search endpoint.")
         if let radius = radius {
             assert((radius <= 40000), "The radius must be 40,000 meters or less to query the Yelp Fusion API search endpoint.")
         }
